@@ -13,20 +13,18 @@ describe('maxSubarraySum', () => {
     });
 
     test('should handle empty array', () => {
-        expect(maxSubarraySum([], 2)).toBe(undefined);
+        expect(maxSubarraySum([], 1)).toBe(undefined);
     });
 
-    // test('should handle same elements ', () => {
-    //     expect(maxSubarraySum([2,2,2,2], 4)).toBe(undefined);
-    // });
+    test('should handle same elements ', () => {
+        expect(maxSubarraySum([2,2,2,2], 4)).toBe(8);
+    });
 
-    // it('should handle arrays with all negative numbers', () => {
-    //     expect(maxSubarraySum([-1, -2, -3, -4, -5], 2)).toBe(-3);
-    //     expect(maxSubarraySum([-10, -20, -30, -40, -50], 3)).toBe(-60);
-    // });
+    test('should handle arrays with all negative numbers', () => {
+        expect(maxSubarraySum([-10, -20, -30, -40, -50], 3)).toBe(-60);
+    });
     
-    // it('should handle arrays with mixed positive and negative numbers', () => {
-    //     expect(maxSubarraySum([-1, 2, 3, -4, 5, -6], 3)).toBe(4);
-    //     expect(maxSubarraySum([5, -2, 3, 4, -1], 2)).toBe(7);
-    // });
+    test('should handle arrays with mixed positive and negative numbers', () => {
+        expect(maxSubarraySum([5, -2, 3, 4, -1], 2)).toBe(7);
+    });
 })
