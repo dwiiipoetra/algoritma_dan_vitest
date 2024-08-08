@@ -103,9 +103,9 @@ export function sumEvenNumbers(obj) {
     helper(obj);
     return sum;
 }
-console.log(sumEvenNumbers(inputObj1));
-console.log(sumEvenNumbers(inputObj2));
-console.log(sumEvenNumbers(inputObj3));
-console.log(sumEvenNumbers(inputObj4));
-console.log(sumEvenNumbers(inputObj5));
-console.log(sumEvenNumbers({}));
+console.log(sumEvenNumbers(inputObj1)); //6
+console.log(sumEvenNumbers(inputObj2)); //0
+console.log(sumEvenNumbers(inputObj3)); //14
+console.log(sumEvenNumbers(inputObj4)); //0
+console.log(sumEvenNumbers(inputObj5)); //14
+console.log(sumEvenNumbers({})); //0
