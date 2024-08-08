@@ -21,7 +21,9 @@ describe('quicksortDescending', () => {
         expect(quicksortDescending([])).toEqual([]);
     })
 
-    test('should handle arrays of string' , () => {
-        expect(quicksortDescending(['1', '2', '3'])).toEqual([1, 2, 3]);
+    test('should handle if arrays is not an arrays of numbers' , () => {
+        expect(quicksortDescending(['1', '2', '3'])).toEqual([3, 2, 1]);
+        expect(quicksortDescending(['1', '2', '3', 'tes'])).toEqual(undefined);
+        expect(quicksortDescending(['1', '2', 3, 'tes'])).toEqual(undefined);
     })
 });
