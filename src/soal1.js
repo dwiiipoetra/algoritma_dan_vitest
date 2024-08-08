@@ -21,6 +21,6 @@ console.log(quicksortDescending([-2, 3, 0, -12, 5, 34])) //[ 34, 5, 3, 0, -2, -1
 console.log(quicksortDescending([5])) //[5]
 console.log(quicksortDescending([5, 5, 5, 5])) //[5, 5, 5, 5]
 console.log(quicksortDescending([])) //[]
-console.log(quicksortDescending(['1', '2', '3'])) //['1', '2', '3']
+console.log(quicksortDescending(['1', '2', '3'])) //[3, 2, 1]
 console.log(quicksortDescending(['1', '2', '3', 'tes'])) //undefined
 console.log(quicksortDescending(['1', '2', 3, 'tes'])) //undefined
